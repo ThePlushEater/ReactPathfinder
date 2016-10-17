@@ -1,0 +1,9 @@
+{
+  "sSiteTitle": "React Canvas Pathfinder",
+  "sButtonPrev": "Prev",
+  "sButtonNext": "Next",
+  "sButtonReset": "Reset",
+  "sButtonStartAnimation": "Start Animation",
+  "sButtonStopAnimation": "Stop Animation",
+  "sStepText": "Pathfinding Step"
+}
