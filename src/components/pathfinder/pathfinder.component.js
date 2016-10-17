@@ -65,6 +65,9 @@ export default class Pathfinder extends React.Component {
     if (this.props.step != nextProps.step) {
       return true;
     }
+    if (this.state.animating != nextState.animating) {
+      return true;
+    }
     return false;
   }
   componentWillUnmount() {

@@ -76,7 +76,7 @@ var config = {
   output: {
     path: BUILD_DIR,
     filename: './js/[name]-bundle.js',
-    publicPath: ''
+    publicPath: '/pathfinder'
   },
   plugins: corePluginList.concat(devPluginList),
   devtool: 'eval',
