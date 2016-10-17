@@ -8,8 +8,14 @@ export function fetchLocalization() {
   if (language.toLowerCase().includes("en")) {
     file = "en.json";
   }
+  let host;
+  if (location.pathname == "/") {
+    host = location.origin
+  } else {
+    host = location.origin + location.pathname;
+  }
   return {
     type: "FETCH_LOCALIZATION",
-    payload: axios.get(location.origin + serverConfig.uLocalization + file),
+    payload: axios.get(host + serverConfig.uLocalization + file),
   }
 }
